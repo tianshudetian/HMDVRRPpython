@@ -1,7 +1,12 @@
+import os
+os.add_dll_directory(os.path.join(os.getenv('GUROBI_HOME'), 'bin'))
+
+
 import gurobipy as gp
 from gurobipy import GRB
-from utils import Remove, doubleRemove
 import matplotlib.pyplot as plt
+from utils import Remove, doubleRemove
+
 
 
 def gurobiSolver(myInstance):
